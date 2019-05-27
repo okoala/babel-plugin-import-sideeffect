@@ -1,0 +1,54 @@
+{
+  "name": "babel-plugin-import-sideeffect",
+  "version": "1.0.0",
+  "description": "import sideeffect plugin for babel.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okoala/babel-plugin-import-sideeffect"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "umi-tools build",
+    "test": "umi-tools test --coverage",
+    "debug": "umi-tools test",
+    "lint": "eslint --ext .js src",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "prepack": "npm run build"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "keywords": [
+    "babel-plugin",
+    "antd"
+  ],
+  "author": "okoala <dapixp@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-0",
+    "babel-plugin-import": "^1.11.2",
+    "babel-plugin-tester": "^6.2.1",
+    "babel-preset-umi": "^1.4.1",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "material-ui": "^0.20.2",
+    "pre-commit": "~1.1.2",
+    "react-toolbox": "^1.2.5",
+    "umi-tools": "^0.4.0"
+  },
+  "babel": {
+    "presets": [
+      "umi"
+    ]
+  },
+  "files": [
+    "src",
+    "lib",
+    "package.json",
+    "README.md"
+  ]
+}
